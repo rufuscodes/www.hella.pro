@@ -1,0 +1,1203 @@
+/*Theme Name:   Hella.pro V7.7.7
+Theme URI:    	http://rufus.codes/themes/wwwhellapro
+Author:         rufuscodes
+Author URI:     http://rufuscodes.com/
+Description:
+*/
+
+@font-face {
+    font-family: 'enamel';
+    src: url('/assetss/fonts/enamel_brush-webfont.eot');
+    src: url('/assetss/fonts/enamel_brush-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assetss/fonts/enamel_brush-webfont.woff2') format('woff2'),
+         url('/assetss/fonts/enamel_brush-webfont.woff') format('woff'),
+         url('/assetss/fonts/enamel_brush-webfont.ttf') format('truetype'),
+         url('/assetss/fonts/enamel_brush-webfont.svg#enamel_brushregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'orange';
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'orange';
+    src: url('./assetss/fonts/orange_kid.otf');
+      src: url('/assetss/fonts/orange_kid-webfont.woff2') format('woff2'),
+         url('/assetss/fonts/orange_kid-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.business-name {
+    font-family: 'orange';
+}
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: @screen-sm-min) {
+    ...;
+}
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: @screen-md-min) {
+}
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: @screen-lg-min) {
+    ...;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input,
+br {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    margin-top: 0px !important;
+    overflow-x: hidden;
+    min-width: 480px;
+    height: 100%;
+    position: relative;
+    z-index: -1;
+
+}
+
+html::-webkit-scrollbar- {
+
+}
+
+.intercom-launcher {right: 300px;}
+
+body {
+    margin-top: 0px !important;
+    line-height: 1;
+    text-shadow: 0px 1px 0px rgba(150, 150, 150, 1);
+    transition: All 2s ease-in;
+    -webkit-transition: All 2s ease-in;
+    -moz-transition: All 2s ease-in;
+    -o-transition: All 2s ease-in;
+    overflow: visible;
+
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #862a05;
+}
+
+a:visited {
+    text-decoration: none;
+    color: #862a05;
+}
+
+.site-main {
+    margin: 150px 0 0 0;
+}
+
+html:after {
+    margin-top: -10px !important;
+    content: "";
+    display: block;
+    position: absolute;
+    padding: none;
+    top: 10px;
+    left: 0;
+    overflow: visible;
+    background: url(img/hella_bg.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 1;
+    width: 100%;
+    min-width: 480px;
+    height: 100%;
+    z-index: -5;
+
+
+    animation: pulseme 8s infinite alternate;
+  }
+
+  @keyframes pulseme {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.8;
+    }
+}
+
+.pending_app_markee {
+    opacity: 0.5;
+    position: absolute;
+    z-index: 30;
+    width: 148px;
+    height: 30px;
+    right: 15px;
+    top: 50px;
+}
+
+.pending_app_markee a {
+    font-family: orange;
+    font-size: 20px;
+    color: #862a05;
+    float: right;
+}
+
+.pending_app_markee a:visited {
+    color: #862a05;
+}
+
+.fb_iframe_widget {
+    position: absolute;
+    top: 50px;
+    right: 26px;
+    float: right;
+    opacity: 1;
+}
+
+.fb_iframe_widget:hover {
+    opacity: 1;
+}
+
+.popup-content {
+    position: absolute;
+    z-index: 29;
+    display: visible;
+}
+
+.hellapro_topper {
+    opacity: 0.9;
+    width: 100%;
+    height: 74px;
+    background: url(img/topper_bg.png);
+    position: absolute;
+    z-index: -4;
+}
+
+.container {
+    overflow: visible;
+    width: 474px;
+    margin: 0 auto 0 auto;
+}
+
+.content {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 800px;
+}
+
+.hellapro_logo {
+    cursor: pointer;
+    width: 201px;
+    height: 120px;
+    background: url(img/hellapro_cloud.png);
+    position: relative;
+    margin: 0 auto;
+    top: 54px;
+}
+
+.hellapro_logo_under {
+    width: 201px;
+    height: 120px;
+    background: url(img/hellapro_cloud.png);
+    position: absolute;
+    opacity: 0.2;
+}
+
+.hellapro_logo_over {
+    width: 201px;
+    height: 120px;
+    background: url(img/hellapro_cloud.png);
+    position: absolute;
+    opacity: 0.1;
+}
+
+.hellapro_logo .hellapro_logo_text {
+    color: #862a05;
+    font-family: enamel;
+    font-size: 104px;
+    display: block;
+    width: 100%;
+    position: absolute;
+    float: left;
+    left: -62px;
+    top: 10px;
+
+}
+
+.knock { animation: pulse 3s infinite alternate;}
+.bnock { animation: bounce 0.8s infinite;}
+
+
+.hellapro_logo_text span {
+    color: #ff9f19;
+    text-shadow: none;
+}
+
+.hellapro_logo_tagline {
+    padding: 4px 0 4px 0;
+    font-family: orange;
+    color: #FFF;
+    border-left: none;
+    border-right: none;
+    border-top: #ff9f19 3px solid;
+    border-bottom: #ff9f19 3px solid;
+    letter-spacing: 1px;
+    font-size: 26px;
+    display: block;
+    position: absolute;
+    z-index: -2;
+    text-shadow: 0px 1.5px 0px #000;
+    text-align: center;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    left: 0;
+    right: 0;
+    top: 170px;
+    width: 99.%;
+    background: #976036;
+}
+
+.hellapro_phone {
+    cursor: pointer;
+    width: 217px;
+    height: 25px;
+    position: absolute;
+    left: 44px;
+    top: 2px;
+}
+
+.hellapro_phone .vphone a{
+    font-family: enamel;
+    -webkit-text-stroke: 0.7px #FFF;
+    letter-spacing: 2px;
+    font-size: 25px;
+    color: #862a05;
+    display: block;
+    font-weight: bold;
+    position: absolute;
+    top: 4px;
+}
+
+.hellapro_phone .desc {
+    font-family: orange;
+    line-height: 24px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #862a05;
+    display: block;
+    position: relative;
+    top: 10px;
+    left: 10px;
+    text-shadow: 0px 0.5px 0px #000;
+    -webkit-text-stroke: 0.3px #FFF;
+    letter-spacing: 1px;
+}
+
+.hellapro_email {
+    display: none;
+    cursor: pointer;
+    width: 207px;
+    height: 25px;
+    position: absolute;
+    left: 52px;
+    top: 10px;
+}
+
+.hellapro_email .vemail {
+    font-family: enamel;
+    font-size: 24px;
+    display: block;
+    position: absolute;
+    top: 0;
+    letter-spacing: 1.5px;
+}
+
+.hellapro_email span {
+    font-family: orange;
+    line-height: 20px;
+    font-size: 10px;
+    color: #9e6950;
+    display: block;
+}
+
+.hellapro_email i {
+    font-family: orange;
+}
+
+.bayphone {
+    width: 19px;
+    height: 19px;
+    background: url(img/bayphone.png);
+    position: absolute;
+    left: -31px;
+    top: 27px;
+}
+
+.brownphone {
+    width: 23px;
+    height: 23px;
+    background: url(img/brownphone.png);
+    position: absolute;
+    left: -34px;
+    top: 4px;
+}
+
+.bayemail {
+    width: 22px;
+    height: 22px;
+    background: url(img/bayemail.png);
+    position: absolute;
+    left: -31px;
+}
+
+.brownemail {
+    width: 22px;
+    height: 19px;
+    background: url(img/brownemail.png);
+    position: absolute;
+    left: -34px;
+    top: 10px;
+}
+
+.menu_btn_con {
+    text-shadow: 0px 1.5px 0px #000;
+    cursor: pointer;
+    width: 107px;
+    height: 25px;
+    background: #862a05;
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    border: #ff9f19 3px solid;
+}
+
+.menu_btn_con span {
+    color: #FFF;
+    font-family: orange;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    text-shadow: 0px 1px 0px #000;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 20px;
+    display: block;
+    float: right;
+    margin: 0px 16px 0 0;
+}
+
+.menu_sec {
+    position: absolute;
+    width: 200px;
+    height: 500px;
+    background:;
+    border: #ff9f19 3px solid;
+    top: 36px;
+    right: 2.5px;
+    display: none;
+}
+
+.menu_sec .bg {
+    width: 200px;
+    height: 500px;
+    background: #000;
+    opacity: 0.27;
+}
+
+.menu_sec .toogle_list {
+    width: 27px;
+    height: 22px;
+    position: relative;
+    background: #FFF;
+    float: right;
+    right: 72px;
+    bottom: 31px;
+}
+
+.menu_sec .exit {
+    opacity: 0.7;
+    font-family: orange;
+    color: #FFF;
+    font-size: 17px;
+    position: absolute;
+    width: 60px;
+    right: 117px;
+    top: 1px;
+}
+
+.menu_sec .more {
+    opacity: 0.7;
+    font-family: orange;
+    color: #FFF;
+    font-size: 18px;
+    width: 54px;
+    position: absolute;
+    bottom: 12px;
+    left: 138px;
+}
+
+.menu_sec .buy_site {
+    overflow: visible;
+    background: #862a05;
+    text-shadow: 0px 1.8px 0px #000;
+    text-align: center;
+    font-family: orange;
+    width: 160px;
+    height: 85px;
+    background: ; border: #ff9f19 2px solid;
+    position: absolute;
+    top: 140px;
+    right: 18px;
+    -webkit-border-radius: 4px;
+}
+
+.menu_sec .coin {
+    opacity: 0.9;
+    width: 20px;
+    height: 21px;
+    background: url(img/coin.png);
+    position: absolute;
+    top: 2px;
+    left: 120px;
+}
+
+.menu_sec .buy_site .mark {
+    position: relative;
+    font-size: 18.5px;
+    top: 24px;
+    right: -2px;
+    font-weight: bold;
+}
+
+.menu_sec .buy_site .mark1 {
+    width: 120px;
+    position: absolute;
+    display: block;
+    font-size: 13.5px;
+    right: 2px;
+    top: 44px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.menu_sec .view_work {
+    background: #976036;
+    text-shadow: 0px 1.8px 0px #000;
+    text-align: center;
+    font-family: enamal;
+    width: 160px;
+    height: 85px;
+    background: ; border: #ff9f19 2px solid;
+    position: absolute;
+    top: 32px;
+    right: 18px;
+    -webkit-border-radius: 4px;
+}
+
+.menu_sec .view_work .mark {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 0 100.5px;
+    overflow: visible;
+}
+
+.menu_sec .view_work .mark .hella {
+    font-family: enamel;
+    font-size: 22px;
+    position: absolute;
+    left: -90px;
+    color: #FFF;
+    letter-spacing: 2.5px;
+    text-shadow: 0px 1px 0px #000;
+    font-weight: bold;
+}
+
+.menu_sec .view_work .mark1 {
+    overflow: visible;
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    font-size: 16.2px;
+    top: 44px;
+    left: 26px;
+    width: 116px;
+    color: #FFF;
+}
+
+.menu_sec ul {
+    margin: 46px 0 0 0;
+    position: absolute;
+    top: 188px;
+    left: 80px;
+}
+
+.menu_items li a {
+    display: block;
+    width: 98px;
+    color: #FFF;
+    font-family: orange;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    text-shadow: 0px 1px 0px #000;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: right;
+    margin: 14px 26px 0 0;
+}
+
+.glyph_menu {
+    width: 27px;
+    height: 24px;
+    background: url(img/right_list.png);
+    transform: -0.5;
+}
+
+.hellapro_show {
+    width: 411px;
+    height: 280px;
+    background: #000;
+    border: #ff9f19 3.5px solid;
+    margin: 110px auto 0 auto;
+    -webkit-border-radius: 4px;
+    overflow: visible;
+    -moz-border-radius: 4px;
+    font-family: orange;
+    border-radius: 4px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #FFF;
+    text-shadow: 0px 1.5px 0px #000;
+    -webkit-text-stroke: 0.7px #ff9f19;
+}
+.close_element_m:hover {opacity: 1;}
+.close_element_m {opacity: 0; position: absolute; right: 30px; top: 20px;  cursor: pointer; z-index: 2; width: 100px; border: #ff9f19 2.5px solid;
+	height: 40px;
+  width: 40px;
+	background: #862a05;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;}
+.close_element_m span {font-size: 25px; position: absolute; display: block; left: 15px; top: 6px; width: 1px; height: 1px;}
+
+.hellapro_show_undo {
+    width: 411px;
+    height: 280px;
+    position: absolute;
+    z-index: 1;
+}
+.opac_0 {opacity: 0.0;}
+.opac_1 {opacity: 0.1;}
+.opac_2 {opacity: 0.2;}
+.opac_3 {opacity: 0.3;}
+.opac_4 {opacity: 0.4;}
+.opac_5 {opacity: 0.5;}
+.opac_full {opacity: 1;}
+
+.hellabg0 {background: url(img/show_bg_1.png);}
+.hellabg1 {background: url(img/rcodes.png);
+  animation: inout 18s infinite alternate;
+  }
+
+  @keyframes inout {
+  0% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.05;
+  }
+  100% {
+    opacity: 0.6;
+  }
+}
+.hellabg2 {background: url(img/.png);}
+.hellabg3 {background: url(img/.png);}
+.hellabg {background: url(img/.png);}
+.hellabg {background: url(img/.png);}
+
+.service_pg {}
+.home_pg {}
+.contact_pg {}
+.samples_pg {}
+
+
+
+
+.talk_rufus {position: relative; display: block; top: 40px;}
+.connect_with {position: relative; display: block; font-size: 54px; font-family: enamel; top: 60px;  }
+.enter_creds {position: relative; display: block; font-size: 26px; font-weight: bold; top: 60px;}
+.hideThisHit {display: none;}
+.field label {display: none;}
+.fieldname {position: absolute; top: 190px; left: 40px;}
+.fieldname input {width: 128px; height: 28px; padding: 0px 0px 0px 8px; border: #ff9f19 1.5px solid;}
+.fieldemail {position: absolute; top: 190px; left: 186px;}
+.fieldemail input {width: 128px; height: 28px; padding: 0px 0px 0px 8px; border: #ff9f19 1.5px solid;
+}
+.fieldsubmit {position: absolute; top: 194px; left: 330px;}
+.extra_tip { position: absolute; bottom: 20px; left: 48px; font-size: 18px;}
+
+.hellapro_show .sub_title_1 {
+    margin: 100px auto 0 auto;
+    text-align: center;
+    font-size: 38px;
+    color: #FFF;
+    text-shadow: 0px 1.5px 0px #000;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    right: 0;
+    left: 0;
+}
+
+.hellapro_show .sub_desc_1 {
+    font-size: 18px;
+    width: 300px;
+    height: auto;
+    letter-spacing: 1px;
+    display: block;
+    margin: 148px auto 0 auto;
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    left: 0;
+    text-align: center;
+}
+
+.hellapro_show h1.welcome {
+    color: #FFF;
+    right: 0;
+    left: 0;
+    top: 60px;
+    display: block;
+    width: 90px;
+    height: 20px;
+    font-size: 28px;
+    position: absolute;
+    letter-spacing: 2px;
+    margin: 0px auto 0 auto;
+    z-index: 2;
+}
+
+
+
+
+
+
+.hellapro_show_content {text-align: none; width: 411px; height: 280px; position: absolute; z-index: 3; overflow: hidden;}
+
+.service_title {font-size: 40px; width: 230px; left: 100px; top: 20px; color: #FFF; display: block; position: absolute;}
+.service_list {text-align: center; width:250px; height: 300px; position: relative; top: 90px; margin: 0 auto;}
+.service_list li {margin-bottom:12px; font-size: 20px;}
+
+
+.hellapro_opt {
+    display: none;
+}
+
+.hellapro_opt li {
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    line-height: 32px;
+    font-family: enamel;
+    color: #FFF;
+    width: 78px;
+    height: 32px;
+    background: #9e6950;
+    border: #ff9f19 3px solid;
+    display: block;
+    margin-left: 105px;
+    margin-top: 60px;
+}
+
+.hellapro_opt li span {
+    min-width: 40px;
+    min-height: 10px;
+    display: block;
+    margin: 0 auto;
+}
+
+.hellapro_opt_view {
+    z-index: -7;
+    overflow: visible;
+    position: absolute;
+    left: 90px;
+    bottom: 40px;
+    color: #FFF;
+    font-family: orange;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    text-shadow: 0px 1px 0px #000;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 20px;
+    display: block;
+}
+
+.hellapro_opt_buy {
+    z-index: -7;
+    left: 30px;
+    bottom: 45px;
+    text-shadow: 0px 2.5px 0px #000;
+    -webkit-text-stroke: 1.2px #FFF;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+    color: #9e6950;
+    font-size: 28px;
+    text-shadow: 0px 1.8px 0px #000;
+    text-align: center;
+    font-family: enamel;
+    width: 178px;
+    height: 40px;
+    position: relative;
+}
+
+.coin1 {
+    width: 36px;
+    height: 37px;
+    background: url(img/coin1.png);
+    position: absolute;
+    left: 44px;
+    bottom: 10px;
+    z-index: -1;
+}
+
+.thumbs2 {
+    width: 44px;
+    height: 48px;
+    background: url(img/thumb2.png);
+    position: absolute;
+    right: 55px;
+    float: right;
+    bottom: 100px;
+    opacity: 0.9;
+}
+
+.contact {
+}
+
+.about {
+}
+
+.hellapro_footer_con {
+    width: 387px;
+    min-height: 2%;
+    max-height: 2%;
+    background: #ff9f19;
+}
+
+.hellapro_footer_con {
+    position: fixed;
+    top: 100%;
+    left: 50%;
+  /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.slide_up {
+    overflow: visible;
+    margin: 0 auto;
+    top: 177px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: -2;
+    width: 370px;
+    height: 70px;
+    background: #FFF;
+    border: #ff9f19 3px solid;
+}
+
+.shade1 {
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.74);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.74);
+    box-shadow: 0px 3px 3px 0px rgba(50, 50, 50, 0.74);
+}
+
+.half-circle {
+    width: 60px;
+    height: 30px;
+ /* as the half of the width */
+    background: #ff9f19;
+    border-bottom-left-radius: 100px;
+  /* 100px of height + 10px of border */
+    border-bottom-right-radius: 100px;
+ /* 100px of height + 10px of border */
+    border-top: none;
+    color: #FFF;
+    font-family: orange;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 0.7px #ff9f19;
+    text-shadow: 0px 1px 0px #000;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 20px;
+    position: absolute;
+    z-index: -5;
+    border-left: #ff9f19 3px solid;
+    border-right: #ff9f19 3px solid;
+    cursor: pointer;
+}
+
+.half_quote {
+    position: relative;
+    top: 69.5px;
+}
+
+.half_quote span {
+    font-size: 40px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin: 4px auto 0 auto;
+    -webkit-text-stroke: 1px #FFF;
+    color: #976036;
+}
+
+.bubble_effect {
+    color: #9e6950;
+    text-shadow: -1.5px -1.5px 0 #fbecb5,
+  -2px -2px 0 #fbecb5,
+   2px -2px 0 #fbecb5,
+   -2px 2px 0 #fbecb5,
+    2px 2px 0 #fbecb5;
+}
+
+.bubble_effect:after {
+    text-shadow: -7.5px -7.5px 0 #000,
+  -5px -5px 0 #000,
+   5px -5px 0 #000,
+   -5px 5px 0 #000,
+    5px 5px 0 #000;
+}
+
+.bubble_effect2 {
+    text-shadow: -0.8px -0.8px 0 #9e6950,
+  -1.5px -1.5px 0 #9e6950,
+   1.5px -1.5px 0 #9e6950,
+   -1.5px 1.5px 0 #9e6950,
+    1.5px 1.5px 0 #9e6950;
+}
+
+.sched {
+    position: absolute;
+    left: 0;
+    right: 0;
+    max-width: 900px;
+    margin: 150px auto 0 auto;
+    z-index: -2;
+    padding: 0 30px 0 30px;
+    overflow: visible;
+}
+
+.sub_cloud_1 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -6px;
+    bottom: -35px;
+    z-index: 4;
+}
+
+.sub_cloud_1 .sub_cloud {
+    opacity: 0.8;
+}
+
+.sub_cloud_2 {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 390px;
+    top: 10px;
+    z-index: 4;
+}
+
+.sub_cloud_2 .sub_cloud {
+    opacity: 0.8;
+}
+
+.sub_macbook {
+    background: url(img/sub_cloud_macbook.png);
+    bottom: 36px;
+    width: 63px;
+    height: 41px;
+    position: absolute;
+}
+
+.sub_htm {
+    background: url(img/sub_htm.png);
+    left: 26px;
+    bottom: 34px;
+    width: 36px;
+    height: 43px;
+    position: absolute;
+}
+
+.sub_css {
+    background: url(img/sub_css.png);
+    bottom: 26px;
+    width: 42px;
+    height: 44px;
+    position: absolute;
+}
+
+.sub_cloud {
+    background: url(img/sub_cloud.png);
+    width: 70px;
+    height: 36px;
+    position: absolute;
+}
+
+.sub_cloud_arrow {
+    background: url(img/sub_cloud_arrow.png);
+    width: 384px;
+    height: 201px;
+    position: absolute;
+    left: -110px;
+    bottom: -24px;
+    z-index: -2;
+    opacity: 0.4;
+}
+
+.hellapro_arrow_contain {
+    width: 470px;
+    height: 100px;
+    position: absolute;
+    top: 340px;
+    z-index: -2;
+}
+
+.hellapro_arrow_contain_foot {
+    background: url(img/sub_cloud_arrow.png);
+    width: 384px;
+    height: 201px;
+    bottom: -60px;
+    position: fixed;
+    z-index: -42;
+    opacity: 0.7;
+    display: none;
+}
+
+.footer_btn {
+    text-shadow: 0px 1.5px 0px #000;
+    cursor: pointer;
+    width: 107px;
+    height: 25px;
+    background: #862a05;
+    position: absolute;
+    border: #ff9f19 3px solid;
+}
+
+.footer_btn span {
+    color: #FFF;
+    font-family: orange;
+    letter-spacing: 2.5px;
+    -webkit-text-stroke: 0.5px #ff9f19;
+    text-shadow: 0px 1px 0px #000;
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 16px;
+    display: block;
+}
+
+.footer_btn.buy {
+    bottom: 35px;
+}
+
+.footer_btn.quote {left: -130px; top: 80px;}
+
+
+.footer_btn.view {
+    bottom: 35px;
+    right: 1px;
+}
+
+.footer_btn.services {bottom: 35px; left: 137px; }
+.sub_back:hover {opacity: 1;}
+.sub_back {
+    opacity: 0;
+    position: absolute;
+    width: 10px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 45px;
+    position: absolute;
+    z-index: -1;
+    left: -4px;
+    top: 20px;
+    cursor: pointer;
+}
+.sub_next:hover {opacity: 1;}
+.sub_next {
+    opacity: 0;
+    cursor: pointer;
+    position: relative;
+    width: 10px;
+    height: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    z-index: 1;
+    left: 454px;
+    top: 20px;
+}
+
+.row {
+    overflow: visible;
+}
+
+
+.pulseme {
+  animation: pulseme 5s infinite;
+}
+
+@keyframes pulseme {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
